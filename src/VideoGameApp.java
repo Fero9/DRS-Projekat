@@ -4,9 +4,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Date;
 
-public class LibraryApp {
+public class VideoGameApp {
     public static void main(String[] args) {
-        selectBooks();
+        selectGames();
 
         //Queries related to the Genre table modification
         ModifyGenre.selectGenre();
@@ -19,9 +19,10 @@ public class LibraryApp {
         ModifyStudio.insertStudio(6, "Test Studio");
         ModifyStudio.updateStudio(6, "New Test Studio");
         ModifyStudio.deleteStudio(6);
+
     }
 
-    public static void selectBooks() {
+    public static void selectGames() {
         String query = "SELECT * FROM video_game";
 
         try (Connection connection = DatabaseConnector.connect();

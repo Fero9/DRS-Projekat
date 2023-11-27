@@ -80,7 +80,7 @@ public class ModifyGenre {
             if (rowsAffected > 0) {
                 System.out.println("Genre deleted successfully!");
             } else {
-                System.out.println("Failed to delete author.");
+                System.out.println("Failed to delete genre.");
             }
 
         } catch (SQLException e) {
